@@ -3,6 +3,7 @@ module.exports = {
   content: ["*",
   "./node_modules/flowbite/**/*.js"
 ],
+darkMode: 'class',
   theme: {
     screens: {
       xs: '320px',

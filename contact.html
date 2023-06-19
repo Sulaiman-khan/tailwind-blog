@@ -4,22 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog-detail</title>
-    <link rel="stylesheet" href="css/input.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/all.min.css" />
-    <link href="node_modules/flowbite/dist/flowbite.min.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="dark:bg-gray-900 bg-white">
     <section class="xs:block lg:flex h-screen justify-start items-center relative">
+      <div class="absolute right-10 top-10">
+        <a href="" class="moon text-black rounded-xl cursor-pointer"><i class="fa-solid fa-moon"></i></a>
+        <a href="" class="sun text-white rounded-xl cursor-pointer"><i class="fa-solid fa-sun"></i></a>
+      </div>
       <div class="xs:w-full lg:w-2/5">
         <img src="images/contact.jpg" class="h-screen xs:w-full lg:w-auto" alt="" />
       </div>
-      <div class="xs:w-full xs:p-10 lg:p-0 xs:bg-opacity-60 xs:bg-white xs:-translate-x-1/2 lg:translate-x-0 lg:w-2/4 xs:absolute xs:top-0 xs:left-1/2 lg:left-0 lg:relative">
+      <div class="dark:bg-transparent xs:w-full xs:p-10 lg:p-0 xs:bg-opacity-60 xs:bg-white xs:-translate-x-1/2 lg:translate-x-0 lg:w-2/4 xs:absolute xs:top-0 xs:left-1/2 lg:left-0 lg:relative">
+        
         <a
           href="index.html"
-          class="text-center font-semibold text-lg text-green-700 capitalize tracking-wide mb-10 block hover:text-green-500"
+          class="dark:text-white text-center font-semibold text-lg text-green-700 capitalize tracking-wide mb-10 block hover:text-green-500"
           ><i class="fa-solid fa-caret-left"></i> Back to homepage</a
         >
-        <h2 class="text-center font-bold text-5xl mb-12">Contact Us</h2>
+        <h2 class="text-center font-bold text-5xl mb-12 dark:text-white">Contact Us</h2>
         <div>
           <form>
             <div class="grid md:grid-cols-2 md:gap-6">
@@ -96,6 +100,7 @@
         </div>
       </div>
     </section>
+    <script src="app.js"></script>
     <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
 </html>
